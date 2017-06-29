@@ -49,7 +49,8 @@ Ports: 80, 443
 ### Docker Environment Variable ###
 
 Here Nginx™ Plus® container environment variable :
-* `NGINX_CONF_TARGZ_URL` : URL provided to download a tar gz file containing 2 folders : `conf` and `certs` to be decompressed in folder `/root/nginx`. (default: "") see (/#Docker-Image-features)
+
+* `NGINX_CONF_TARGZ_URL` : URL provided to download a tar gz file containing 2 folders : `conf`, `conf.d`, `repo-certs`, `html` and `certs` to be decompressed in folder `/root/nginx`. (default: "") see *Docker-Image-features* paragraph for more details
 
 
 
@@ -58,12 +59,12 @@ Here Nginx™ Plus® container environment variable :
 Here a sample command to run Nginx™ Plus® container:
 
 ```bash
-docker run -d -p 8080:80 -p 8043:443 -v /path/to/nginx/conf:/root/nginx/conf -v /path/to/nginx/certs:/root/nginx/certs --name my-nginx-plus hellgate75/nginx-plus:latest
+docker run -d -p 8080:80 -p 8043:443 -v /path/to/nginx/conf:/root/nginx/conf -v /path/to/nginx/certs:/root/nginx/certs --name my-nginx-plus hellgate75/nginx-plus:1.11.10
 ```
 
 ### Test Container ###
 
-On your browser open URL: http://{container ip or localhost}:{8080 or any port you have bootstrapped}/.
+On your browser open URL: http://{ container ip or localhost}:{8080 or any port you have bootstrapped}/.
 
 
 ### License ###
