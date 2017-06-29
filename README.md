@@ -1,6 +1,6 @@
 # Nginx Plus
 
-Docker Image for Nginx plus
+Docker Image for Nginx™ Plus®
 
 
 ### Introduction ###
@@ -9,6 +9,13 @@ Nginx™ Plus® is the all‑in‑one application delivery platform for the mode
 
 Here some more info on Nginx™ Plus® :
 https://www.nginx.com/products/
+
+
+Get more information bout this project at :
+
+* [Nginx-plus docker image GitHub repository](https://github.com/hellgate75/nginx-plus)
+* [Nginx-plus docker image Wiki](https://github.com/hellgate75/nginx-plus/wiki)
+* [Nginx-plus docker image GitHub Page](https://hellgate75.github.io/nginx-plus/)
 
 
 ### Goals ###
@@ -37,15 +44,13 @@ Volume used to install Nginx™ Plus® repository certificates and keys.
 
 Volume used to install Nginx™ Plus® configuration files.
 
-
 `/root/nginx/conf.d` :
 
 Volume used to install Nginx™ Plus® module configuration files (/etc/nginx/conf.d/...).
 
-
 `/usr/share/nginx/html` :
 
-Default Nginx™ Plus® html folder, if no file will be added default file will be uploded (see [sample](/samples) folder for defualt folder html files).
+Default Nginx™ Plus® html folder, if no file will be added default file will be uploded (see [sample](https://github.com/hellgate75/nginx-plus/1.11.10/master/samples) folder for defualt folder html files).
 
 Ports: 80, 443
 
