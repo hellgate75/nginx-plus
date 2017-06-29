@@ -55,7 +55,6 @@ Ports: 80, 443
 Here Nginx™ Plus® container environment variable :
 
 * `NGINX_CONF_TARGZ_URL` : URL provided to download a tar gz file containing a few folders : `conf`, `conf.d`, `repo-certs`, `html` and `certs` to be decompressed in folder `/root/nginx`. (default: "") see *Docker-Image-features* paragraph for more details
->>>>>>> 1.11.10
 
 
 
