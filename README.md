@@ -50,7 +50,7 @@ Volume used to install Nginx™ Plus® module configuration files (/etc/nginx/co
 
 `/usr/share/nginx/html` :
 
-Default Nginx™ Plus® html folder, if no file will be added default file will be uploded (see [sample](https://github.com/hellgate75/nginx-plus/1.11.10/master/samples) folder for defualt folder html files).
+Default Nginx™ Plus® html folder, if no file will be added default file will be uploded (see [sample](https://github.com/hellgate75/nginx-plus/tree/1.11.10/samples) folder for defualt folder html files).
 
 Ports: 80, 443
 
