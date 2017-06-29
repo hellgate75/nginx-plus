@@ -31,8 +31,20 @@ if ! [[ -e /root/nginx_configured ]]; then
   fi
   if [[ -e /root/nginx/certs ]]; then
     if ! [[ -z "$( ls /root/nginx/certs/)" ]]; then
-      echo "Nginx™ Plus® applies certificates form /root/nginx/certs ..."
+      echo "Nginx™ Plus® applies system certificates form /root/nginx/certs ..."
     cp -f /root/nginx/certs/* /etc/ssl/
+    fi
+  fi
+  if [[ -e /root/nginx/repo-certs ]]; then
+    if ! [[ -z "$( ls /root/nginx/repo-certs/)" ]]; then
+      echo "Nginx™ Plus® applies Software Repository certificates form /root/nginx/certs ..."
+    cp -f /root/nginx/repo-certs/* /etc/ssl/
+    fi
+  fi
+  if [[ -e /root/nginx/html ]]; then
+    if ! [[ -z "$( ls /root/nginx/html/)" ]]; then
+      echo "Nginx™ Plus® applies html files form  /root/nginx/html ..."
+    cp -f /root/nginx/html/* /usr/share/nginx/html/
     fi
   fi
   if [[ -e /root/nginx/repo-certs ]]; then

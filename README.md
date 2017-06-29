@@ -23,11 +23,15 @@ NOTE: Will be released soon a production docker image.
 
 Here some information :
 
-Volumes : /root/nginx/certs, /root/nginx/conf.d, /root/nginx/certs, /usr/share/nginx/html
+Volumes : /root/nginx/certs, /root/nginx/repo-certs, /root/nginx/conf.d, /root/nginx/certs, /usr/share/nginx/html
 
 `/root/nginx/certs` :
 
-Volume used to install Nginx™ Plus® streaming certificates and keys.
+Volume used to install Nginx™ Plus® system certificates and keys.
+
+`/root/nginx/repo-certs` :
+
+Volume used to install Nginx™ Plus® repository certificates and keys.
 
 `/root/nginx/conf` :
 
@@ -50,8 +54,8 @@ Ports: 80, 443
 
 Here Nginx™ Plus® container environment variable :
 
-* `NGINX_CONF_TARGZ_URL` : URL provided to download a tar gz file containing 2 folders : `conf`, `conf.d`, `html` and `certs` to be decompressed in folder `/root/nginx`. (default: "") see *Docker-Image-features* paragraph for more details
-
+* `NGINX_CONF_TARGZ_URL` : URL provided to download a tar gz file containing a few folders : `conf`, `conf.d`, `repo-certs`, `html` and `certs` to be decompressed in folder `/root/nginx`. (default: "") see *Docker-Image-features* paragraph for more details
+>>>>>>> 1.11.10
 
 
 
@@ -65,7 +69,7 @@ docker run -d -p 8080:80 -p 8043:443 -v /path/to/nginx/conf:/root/nginx/conf -v 
 
 ### Test Container ###
 
-On your browser open URL: http://{container ip or localhost}:{8080 or any port you have bootstrapped}/.
+On your browser open URL: http://{ container ip or localhost}:{8080 or any port you have bootstrapped}/.
 
 
 ### License ###

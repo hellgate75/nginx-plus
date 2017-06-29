@@ -44,7 +44,7 @@ RUN ln -sf /dev/stdout /var/log/nginx/access.log && \
 
 COPY docker-start-nginx.sh /usr/local/bin/docker-start-nginx
 
-VOLUME ["/root/nginx/certs", "/root/nginx/conf", "/root/nginx/conf.d", "/usr/share/nginx/html"]
+VOLUME ["/root/nginx/certs", "/root/nginx/repo-certs", "/root/nginx/conf", "/root/nginx/conf.d", "/usr/share/nginx/html"]
 
 RUN chmod 777 /usr/local/bin/docker-start-nginx
 
