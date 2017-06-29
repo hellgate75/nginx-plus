@@ -64,7 +64,7 @@ Here Nginx™ Plus® container environment variable :
 Here a sample command to run Nginx™ Plus® container:
 
 ```bash
-docker run -d -p 8080:80 -p 8043:443 -v /path/to/nginx/conf:/root/nginx/conf -v /path/to/nginx/certs:/root/nginx/certs --name my-nginx-plus hellgate75/nginx-plus:latest
+docker run -d -p 8080:80 -p 8043:443 -v /path/to/nginx/conf:/root/nginx/conf -v /path/to/nginx/certs:/root/nginx/certs --name my-nginx-plus hellgate75/nginx-plus:1.11.10
 ```
 
 ### Test Container ###
